@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --maincolor: #281EFF;
+    --secondmaincolor: #2DFF8C;
+    --fontcolor: #F9F9F9;
+    --whitecolor: #FFFFFF;
+
+}
+
+body {
+
+    font-family: 'Varela Round', sans-serif;
+}
+
+h1,
+p,
+h2,
+label {
+    color: var(--whitecolor);
+}
+
+.container {
+    background: transparent linear-gradient(180deg, var(--maincolor) 0%, var(--secondmaincolor) 100%) 0% 0% no-repeat padding-box;
+    min-height: 900px;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    flex-wrap: wrap;
+    border: 1px solid black;
+
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Satisfy', cursive;
+    color: var(--whitecolor);
+    font-size: 8rem;
+    font-weight: 100;
+}
+
+
+
+.form {
+    display: flex;
+    align-items: center;
+    gap: 7.25rem;
+    flex-direction: row;
+    margin-top: 20px;
+    max-width: 1200px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+.control-form {
+    display: flex;
+    flex-direction: column;
+    gap: .123625rem;
+    min-width: 350px;
+
+
+}
+
+#fullName,
+#email {
+
+
+    background-color: #f9f9f91a;
+    border: 3px solid var(--whitecolor);
+    padding: 5px;
+    opacity: 0.5;
+}
+
+[placeholder] {
+    color: var(--fontcolor);
+    font-weight: bold;
+}
+
+.button {
+    padding: 7px;
+    margin-top: 20px;
+    font-family: 'Varela Round', sans-serif;
+    background-color: var(--whitecolor);
+    width: 150px;
+    font-size: 0.7rem;
+
+}
+
+h2 {
+    margin-bottom: 21px;
+    font-size: 1.5rem;
+}
+
+.container:hover {
+    border: 1px solid rgba(0, 0, 255, 0.452);
+}
+
+@media screen and (min-width:1103px) and (max-width:1200px) {
+
+    .container {
+        width: auto;
+        margin: 0;
+        background: transparent linear-gradient(180deg, var(--secondmaincolor) 0%, var(--maincolor) 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .form {
+        display: flex;
+        gap: 1.625rem;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .control-form {
+        display: flex;
+        align-items: center;
+
+    }
+
+    [placeholder] {
+        text-align: center;
+    }
+
+    p {
+        max-width: 500px;
+        text-align: center;
+
+    }
+
+    #fullName,
+    #email {
+        padding: 10px;
+        min-width: 250px;
+        background: transparent;
+        background-color: #f9f9f91a;
+        border: 1px solid var(--whitecolor);
+    }
+
+    #email {
+        position: absolute;
+        transform: translate(-94px, 3.55rem);
+        box-shadow: 5px 2px 3px var(--secondmaincolor);
+        opacity: 0.5;
+    }
+
+    #fullName {
+        position: absolute;
+        transform: translate(-95px, 20px);
+        box-shadow: 5px 2px 3px var(--secondmaincolor);
+        opacity: 0.5;
+    }
+
+    .button {
+        padding: 2px 30px;
+        opacity: 0.4;
+        box-shadow: 5px 2px 3px var(--secondmaincolor);
+        background: rgb(3, 177, 168);
+        font-weight: bold;
+        color: var(--whitecolor);
+        width: 100px;
+        position: absolute;
+        transform: translate(470px, 70px) rotate(45deg);
+    }
+
+
+
+    .control-form .haderlabelname {
+        transform: translateX(-240px) rotate(-30deg)
+    }
+
+    .control-form .haderlabelemail {
+
+        transform: translate(-240px, 2.45rem) rotate(-30deg)
+    }
+
+}
+
+@media screen and (min-width:440px) and (max-width:1102px) {
+
+    .form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+
+    }
+
+    .control-form {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        max-width: 300px;
+        text-align: center;
+
+    }
+
+    .button {
+        width: 110px;
+        height: 50px;
+        text-align: center;
+        animation: mybuttom 5s infinite;
+        padding: 0;
+        position: absolute;
+        right: 85px;
+        margin-top: 85px;
+
+
+    }
+
+    @keyframes mybuttom {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+
+
+
+    }
+
+    #email,
+    #fullName {
+        box-shadow: 5px 2px 3px var(--secondmaincolor);
+        opacity: 0.5;
+        padding: 5px;
+    }
+
+
+    .button:hover {
+
+        opacity: 0.5;
+        background: transparent linear-gradient(180deg, var(--maincolor) 0%, var(--secondmaincolor) 100%) 0% 0% no-repeat padding-box;
+        box-shadow: 2px 2px 2px 2px yellowgreen
+    }
+
+}
+
+@media screen and (max-width:439px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2,
+    h1,
+    p {
+        width: 350px;
+        text-align: center;
+    }
+
+    #fullName,
+    #email {
+        width: 150px;
+    }
+
+    .form {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        margin-right: 100px;
+
+    }
+
+    .control-form {
+
+        margin-top: 20px;
+    }
+}
