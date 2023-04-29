@@ -266,7 +266,7 @@ h2 {
     h1,
     p {
         width: 250px;
-        text-align: center;
+        text-align: start;
     }
 
     #fullName,
@@ -277,15 +277,26 @@ h2 {
     .form {
 
         display: flex;
-        justify-content: center;
+        justify-content: start;
         flex-direction: column;
         margin: auto;
-        margin-right: 90px;
+
 
     }
 
     .control-form {
 
         margin-top: 20px;
+        margin-right: 40px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        justify-items: start;
+        margin-left: 50px;
+
+
     }
 }
