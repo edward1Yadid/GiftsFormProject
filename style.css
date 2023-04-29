@@ -265,13 +265,13 @@ h2 {
     h2,
     h1,
     p {
-        width: 350px;
+        width: 250px;
         text-align: center;
     }
 
     #fullName,
     #email {
-        width: 150px;
+        width: 250px;
     }
 
     .form {
@@ -280,7 +280,7 @@ h2 {
         justify-content: center;
         flex-direction: column;
         margin: auto;
-        margin-right: 100px;
+        margin-right: 90px;
 
     }
 
