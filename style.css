@@ -58,6 +58,13 @@ h1 {
     flex-wrap: wrap;
 }
 
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
 
 
 .control-form {
