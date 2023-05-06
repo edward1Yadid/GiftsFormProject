@@ -263,7 +263,7 @@ h2 {
 
 }
 
-@media screen and (max-width:439px) {
+@media screen and (min-width:321px) and (max-width:439px) {
 
 
 
@@ -315,5 +315,47 @@ h2 {
 
     .button {
         width: 316px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2,
+
+    p {
+        min-width: 250px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 0.8rem;
+    }
+
+    #fullName,
+    #email {
+        width: 250px;
+    }
+
+    .control-form {
+        margin-right: 30px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-items: center;
+        margin-left: 50px;
+
+
+    }
+
+    .button {
+        min-width: 266px;
     }
 }
